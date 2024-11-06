@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Portal - Admin Signup</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2; /* Light background */
+            color: #333; /* Dark text */
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2980b9; /* Header background color */
+            color: white; /* White text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white; /* White link color */
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #bdc3c7; /* Lighter color on hover */
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .signup-section {
+            background-color: white; /* White background for the form */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .signup-section h2 {
+            color: #2980b9; /* Heading color matching header */
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        /* Form styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin: 10px 0;
+            font-size: 1.1em;
+            text-align: left;
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #2980b9; /* Button color matching header */
+            color: white; /* White button text */
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #3498db; /* Lighter color on hover */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2980b9; /* Set a background color matching the header */
+            color: white; /* Change text color to white for better contrast */
+            padding: 20px; /* Padding for spacing */
+            text-align: center; /* Center the text */
+            position: relative; /* Position relative to manage stacking context */
+            bottom: 0; /* Ensure footer is at the bottom of the page */
+            width: 100%; /* Full width of the page */
+            margin-top: 40px; /* Space above the footer */
+        }
+
+        footer p {
+            margin: 0; /* Remove default margin */
+            font-size: 1em; /* Adjust font size */
+        }
+
+        /* Link styles */
+        p {
+            margin-top: 15px;
+        }
+
+        a {
+            color: #2980b9; /* Link color matching header */
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scholarship and Financial Aid Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+                <li><a href="user_login.html">User Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="signup-section">
+            <h2>Create Admin Account</h2>
+            <form action="#" method="POST">
+                <label for="admin-name">Name:</label>
+                <input type="text" id="admin-name" name="name" required>
+
+                <label for="admin-email">Email:</label>
+                <input type="email" id="admin-email" name="email" required>
+
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" name="password" required>
+
+                <button type="submit">Sign up</button>
+            </form>
+            <p>Already have an account? <a href="admin_login.html">Login here</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Scholarship Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+  
